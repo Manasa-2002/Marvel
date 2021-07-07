@@ -1,0 +1,166 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;0,900;1,100;1,300;1,400;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgba(34, 54, 69);
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: crimson;
+}
+
+.header {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-fluid {
+    background-color: ghostwhite;
+}
+
+.brand {
+    font-size: 3rem;
+    font-weight: 300;
+    transform: translateX(-100rem);
+    animation: slideIn .5s forwards;
+}
+
+.brand a {
+    color: black;
+}
+
+.brand span {
+    color: crimson;
+}
+
+.navbar {
+    /* background: white; */
+    /* padding: 1rem 1rem; */
+    height: 0rem;
+    padding-right: 1rem;
+    min-height: 13.3vh;
+}
+
+.navbar .navbar-brand a {
+    padding: 1rem 0;
+    display: block;
+    text-decoration: none;
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: crimson;
+}
+
+.navbar-toggler {
+    background: crimson;
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+}
+
+.navbar-toggler span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border: 1px;
+    background: #fff;
+}
+
+.navbar-toggler span+span {
+    margin-top: 4px;
+    width: 20px;
+    margin-left: 2px;
+}
+
+.navbar-toggler span+span+span {
+    width: 20px;
+    margin-left: 2px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1.5rem 1.2rem;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    border-top: 4px solid crimson;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:active {
+    border-top: 4px solid crimson;
+    color: crimson;
+}
+
+.navbar-nav button {
+    padding: 1.2rem 0;
+}
+
+.navbar-nav .btn {
+    background-color: crimson;
+    color: white;
+    border-radius: 0;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    /* margin-top: -10px; */
+}
+
+.navbar-nav .btn:hover {
+    background-color: crimson;
+}
+
+.navbar-nav li {
+    transform: translateX(100rem);
+    animation: slideIn .5s forwards;
+}
+
+.navbar-nav li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.navbar-nav li:nth-child(2) {
+    animation-delay: .5s;
+}
+
+.navbar-nav li:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.navbar-nav li:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.navbar-nav li:nth-child(5) {
+    animation-delay: 2s;
+}
+
+.navbar-nav li:nth-child(6) {
+    animation-delay: 2.5s;
+}
+
+.navbar-nav li a:last-child {
+    margin-right: 0;
+}
+
+@keyframes slideIn {
+    from {}
+    to {
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 1036px) {
+    .navbar {
+        padding: 1rem 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

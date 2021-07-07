@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    color: #777;
+}
+
+body {
+    font-family: Garamond, serif;
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    background: #000;
+    color: #dbc1ac;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.5)), url("/static/images/home_1.jpeg") no-repeat center center/cover;
+}
+
+.banner {
+    position: relative;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.heading {
+    animation-name: slide;
+    animation-duration: 2s;
+}
+
+.main {
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/*
+.container {
+    max-width: 120rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.caption border:hover {
+    background-color: #2196f3;
+}
+
+nav {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    /*height: 10vh;
+    background: url(home_1.jpg);
+}
+
+.brand {
+    margin-left: 30px;
+    margin-right: 250px;
+    font-size: 2.8rem;
+    font-weight: 300;
+    transform: translateX(-100rem);
+    animation: slideIn .5s forwards;
+}
+
+    .brand span {
+        color: crimson;
+    }
+
+.navbar-nav {
+    display: flex;
+}
+
+    .navbar-nav li {
+        list-style: none;
+        transform: translateX(100rem);
+        animation: slideIn .5s forwards;
+    }
+
+        .navbar-nav li:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .navbar-nav li:nth-child(2) {
+            animation-delay: .5s;
+        }
+
+        .navbar-nav li:nth-child(3) {
+            animation-delay: 1s;
+        }
+
+        .navbar-nav li:nth-child(4) {
+            animation-delay: 1.5s;
+        }
+
+        .navbar-nav li a {
+            padding: 1rem 0;
+            margin: 0 1rem;
+            position: relative;
+            letter-spacing: 2px;
+        }
+
+            .navbar-nav li a:last-child {
+                margin-right: 0;
+            }
+
+            .navbar-nav li a::before,
+            .navbar-nav li a::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: crimson;
+                left: 0;
+                transform: scaleX(0);
+                transition: all .5s;
+            }
+
+            .navbar-nav li a::before {
+                top: 0;
+                transform-origin: left;
+            }
+
+            .navbar-nav li a::after {
+                bottom: 0;
+                transform-origin: right;
+            }
+
+            .navbar-nav li a:hover::before,
+            .navbar-nav li a:hover::after {
+                transform: scaleX(1);
+            }
+
+@keyframes slideIn {
+    from {
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}*/
+
+#about {
+    background: black;
+    margin-top: 30px;
+    color: #dbc1ac;
+}
+
+.text {
+    font-size: 28px;
+}
+
+.about-images {
+    position: relative;
+}
+
+.about-img {
+    position: absolute;
+    width: 225px;
+    transition: all 2s ease;
+    opacity: 0.9;
+}
+
+.img-1 {
+    left: 20%;
+    top: 0%;
+}
+
+.img-2 {
+    left: 45%;
+    top: 25%;
+    z-index: 10;
+}
+
+.img-3 {
+    left: 70%;
+    top: 45%;
+    z-index: 20;
+}
+
+.img-4 {
+    left: 70%;
+    top: 0%;
+    height: 110px;
+}
+
+.img-5 {
+    left: 20%;
+    top: 45%;
+    height: 110px;
+}
